@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="tempUi - by eladiad sadiku ">
+    <meta name="author" content="Eladiad Sadiku">
+    <meta name="keyword" content="Admin,Template,jQuery,CSS,HTML,Dashboard,Js">
+    <title>Temp | UI</title>
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/css/tempStyle.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/css/pace.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/css/layout-style.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/assets/fontAwesome/css/all.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/chart/Chart.css" rel="stylesheet" asp-append-version="true">
+    <script src="~/chart/Chart.js"></script>
+</head>
+
+<body class="tempUi-app">
+    <div class="tempUi-sidebar tempUi-sidebar-dark tempUi-sidebar-fixed tempUi-sidebar-lg-show" id="sidebar">
+        <div class="tempUi-sidebar-brand">
+            <h1 style="color: #fff;font-weight: bold;" class="tempUi-sidebar-brand-full"><i class="fas fa-horse"></i></h1>
+            <h5 style="color: #fff;font-weight: bold;" class="tempUi-sidebar-brand-minimized"><i class="fas fa-horse-head"></i></h5>
+        </div>
+        <ul class="tempUi-sidebar-nav" data-drodpown-accordion="true">
+            <li class="tempUi-sidebar-nav-item">
+                <a class="tempUi-sidebar-nav-link" href="main.html">
+                    <i class="fas fa-user space-Icon"></i> Dashboard<span class="badge badge-info">NEW</span>
+                </a>
+            </li>
+            <li class="tempUi-sidebar-nav-title">Theme</li>
+            <li class="tempUi-sidebar-nav-item">
+                <a class="tempUi-sidebar-nav-link" href="colors.html">
+                    <i class="fas fa-user space-Icon"></i> Colors
+                </a>
+            </li>
+            <li class="tempUi-sidebar-nav-item">
+                <a class="tempUi-sidebar-nav-link" href="typography.html">
+                    <i class="fas fa-user space-Icon"></i> Typography
+                </a>
+            </li>
+            <li class="tempUi-sidebar-nav-title">Components</li>
+            <li class="tempUi-sidebar-nav-dropdown">
+                <a class="tempUi-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-user space-Icon"></i>  Base
+                </a>
+                <ul class="tempUi-sidebar-nav-dropdown-items">
+                    <li class="tempUi-sidebar-nav-item"><a class="tempUi-sidebar-nav-link" href="base/breadcrumb.html"> Breadcrumb</a></li>
+                </ul>
+            </li>
+            <li class="tempUi-sidebar-nav-dropdown">
+                <a class="tempUi-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-user space-Icon"></i>  Apps
+                </a>
+                <ul class="tempUi-sidebar-nav-dropdown-items">
+                    <li class="tempUi-sidebar-nav-dropdown">
+                        <a class="tempUi-sidebar-nav-dropdown-toggle" href="#">
+                            <i class="fas fa-user space-Icon"></i>  Email
+                        </a>
+                        <ul class="tempUi-sidebar-nav-dropdown-items">
+                            <li class="tempUi-sidebar-nav-item">
+                                <a class="tempUi-sidebar-nav-link" href="apps/email/inbox.html">
+                                    Inbox<span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="tempUi-sidebar-nav-item">
+                                <a class="tempUi-sidebar-nav-link" href="apps/email/message.html">
+                                    Message<span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="tempUi-sidebar-nav-item">
+                                <a class="tempUi-sidebar-nav-link" href="apps/email/compose.html">
+                                    Compose<span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <button class="tempUi-sidebar-minimizer tempUi-class-toggler" type="button" data-target="_parent"
+                data-class="tempUi-sidebar-unfoldable"></button>
+    </div>
+    <div class="tempUi-sidebar tempUi-sidebar-lg tempUi-sidebar-light tempUi-sidebar-right tempUi-sidebar-overlaid" id="aside">
+        <button class="tempUi-sidebar-close tempUi-class-toggler" type="button" data-target="_parent" data-class="tempUi-sidebar-show"
+                responsive="true">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav nav-tabs nav-underline nav-underline-primary" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+                    <i class="fas fa-handshake"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+                    <i class="fab fa-rocketchat"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="timeline" role="tabpanel">
+                <div class="list-group list-group-accent">
+                    <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase tempUi-small">
+                        Today
+                    </div>
+                    <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+                        <div class="tempUi-avatar float-right">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                        <div>Meeting with <strong>Lucas</strong></div><small class="text-muted mr-3">
+                            <i class="far fa-calendar-alt"></i> 1 - 3pm
+                        </small><small class="text-muted">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp; Palo Alto, CA
+                        </small>
+                    </div>
+                    <div class="list-group-item list-group-item-accent-info">
+                        <div class="tempUi-avatar float-right">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                        <div>Skype with <strong>Megan</strong></div><small class="text-muted mr-3">
+                            <i class="far fa-calendar-alt"></i> 4 - 5pm
+                        </small><small class="text-muted">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp; On-line
+                        </small>
+                    </div>
+                    <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase tempUi-small">
+                        Tomorrow
+                    </div>
+                    <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+                        <div>New UI Project - <strong>deadline</strong></div><small class="text-muted mr-3">
+                            <i class="far fa-calendar-alt"></i> 10 - 11pm
+                        </small><small class="text-muted">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp; creativeLabs HQ
+                        </small>
+                        <div class="tempUi-avatars-stack mt-2">
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+                        <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="text-muted mr-3">
+                            <i class="far fa-calendar-alt"></i> 1 - 3pm
+                        </small><small class="text-muted">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp; Palo Alto, CA
+                        </small>
+                    </div>
+                    <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+                        <div><strong>Team meeting</strong></div><small class="text-muted mr-3">
+                            <i class="far fa-calendar-alt"></i> 4 - 6pm
+                        </small><small class="text-muted">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp; creativeLabs HQ
+                        </small>
+                        <div class="tempUi-avatars-stack mt-2">
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <div class="tempUi-avatar tempUi-avatar-xs">
+                                <i class="fas fa-poll"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane p-3" id="messages" role="tabpanel">
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">
+                            1:52
+                            PM
+                        </small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">
+                            1:52
+                            PM
+                        </small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">
+                            1:52
+                            PM
+                        </small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">
+                            1:52
+                            PM
+                        </small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small><small class="text-muted float-right mt-1">
+                            1:52
+                            PM
+                        </small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div><small class="text-muted">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tempUi-wrapper">
+        <header class="tempUi-header tempUi-header-light tempUi-header-fixed tempUi-header-with-subheader">
+            <button class="tempUi-header-toggler tempUi-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar"
+                    data-class="tempUi-sidebar-show">
+                <span class="tempUi-header-toggler-icon"></span>
+            </button>
+            <a class="tempUi-header-brand d-sm-none" href="#">
+                <h1 style="font-weight: bold;" class="tempUi-header-brand-full tempUi-d-dark-none"><i class="fas fa-horse"></i></h1>
+                <h5 style="font-weight: bold;" class="tempUi-header-brand-minimized tempUi-d-dark-none"><i class="fas fa-horse-head"></i></h5>
+                <h1 style="font-weight: bold;" class="tempUi-header-brand-full tempUi-d-light-none"><i class="fas fa-horse"></i></h1>
+                <h5 style="font-weight: bold;" class="tempUi-header-brand-minimized tempUi-d-light-none"><i class="fas fa-horse-head"></i></h5>
+            </a>
+            <button class="tempUi-header-toggler tempUi-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
+                    data-class="tempUi-sidebar-lg-show" responsive="true">
+                <span class="tempUi-header-toggler-icon"></span>
+            </button>
+            <ul class="tempUi-header-nav d-md-down-none">
+                <li class="tempUi-header-nav-item px-3"><a class="tempUi-header-nav-link" href="#">Dashboard</a></li>
+                <li class="tempUi-header-nav-item px-3"><a class="tempUi-header-nav-link" href="#">Users</a></li>
+                <li class="tempUi-header-nav-item px-3"><a class="tempUi-header-nav-link" href="#">Settings</a></li>
+            </ul>
+            <ul class="tempUi-header-nav mfs-auto">
+                <li class="tempUi-header-nav-item px-3">
+                    <button class="tempUi-class-toggler tempUi-header-nav-btn" type="button" id="header-tooltip" data-target="body"
+                            data-class="tempUi-dark-theme" data-toggle="tempUi-tooltip" data-placement="bottom" title="Toggle Light/Dark Mode">
+                        <i class="far fa-moon tempUi-icon tempUi-d-dark-none"></i>
+                        <i class="far fa-sun tempUi-icon tempUi-d-light-none"></i>
+                    </button>
+                </li>
+            </ul>
+            <ul class="tempUi-header-nav">
+                <li class="tempUi-header-nav-item dropdown d-md-down-none mx-2">
+                    <a class="tempUi-header-nav-link" data-toggle="dropdown"
+                       href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-bell"></i> <span class="badge badge-pill badge-danger">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+                        <div class="dropdown-header bg-light"><strong>You have 5 notifications</strong></div>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user-plus"></i> New user registered
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-trash-alt"></i> User deleted
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user-plus"></i> New client
+                        </a>
+                    </div>
+                </li>
+                @*<li class="tempUi-header-nav-item dropdown d-md-down-none mx-2">
+                        <a class="tempUi-header-nav-link" data-toggle="dropdown"
+                           href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-list-ul"></i> <span class="badge badge-pill badge-warning">15</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+                            <div class="dropdown-header bg-light"><strong>You have 5 pending tasks</strong></div><a class="dropdown-item d-block" href="#">
+                                <div class="small mb-1">Upgrade NPM &amp; Bower<span class="float-right"><strong>0%</strong></span></div>
+                                <span class="progress progress-xs">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </span>
+                            </a><a class="dropdown-item d-block" href="#">
+                                <div class="small mb-1">ReactJS Version<span class="float-right"><strong>25%</strong></span></div><span class="progress progress-xs">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </span>
+                            </a><a class="dropdown-item d-block" href="#">
+                                <div class="small mb-1">VueJS Version<span class="float-right"><strong>50%</strong></span></div><span class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </span>
+                            </a><a class="dropdown-item d-block" href="#">
+                                <div class="small mb-1">Add new layouts<span class="float-right"><strong>75%</strong></span></div><span class="progress progress-xs">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </span>
+                            </a><a class="dropdown-item d-block" href="#">
+                                <div class="small mb-1">Angular 8 Version<span class="float-right"><strong>100%</strong></span></div><span class="progress progress-xs">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </span>
+                            </a><a class="dropdown-item text-center border-top" href="#"><strong>View all tasks</strong></a>
+                        </div>
+                    </li>*@
+                <li class="tempUi-header-nav-item dropdown d-md-down-none mx-2">
+                    <a class="tempUi-header-nav-link" data-toggle="dropdown"
+                       href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-envelope"></i> <span class="badge badge-pill badge-info">7</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
+                        <div class="dropdown-header bg-light"><strong>You have 4 messages</strong></div><a class="dropdown-item"
+                                                                                                           href="#">
+                            <div class="message">
+                                <div class="py-3 mfe-3 float-left">
+                                    <div class="tempUi-avatar">
+                                        <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-success"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">
+                                        Just
+                                        now
+                                    </small>
+                                </div>
+                                <div class="text-truncate font-weight-bold"><span class="text-danger">!</span> Important message</div>
+                                <div class="small text-muted text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt...
+                                </div>
+                            </div>
+                        </a><a class="dropdown-item" href="#">
+                            <div class="message">
+                                <div class="py-3 mfe-3 float-left">
+                                    <div class="tempUi-avatar">
+                                        <i class="fas fa-poll"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">
+                                        5 minutes
+                                        ago
+                                    </small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt...
+                                </div>
+                            </div>
+                        </a><a class="dropdown-item" href="#">
+                            <div class="message">
+                                <div class="py-3 mfe-3 float-left">
+                                    <div class="tempUi-avatar">
+                                        <i class="fas fa-poll"></i><span class="tempUi-avatar-status bg-danger"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">
+                                        1:52
+                                        PM
+                                    </small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt...
+                                </div>
+                            </div>
+                        </a><a class="dropdown-item" href="#">
+                            <div class="message">
+                                <div class="py-3 mfe-3 float-left">
+                                    <div class="tempUi-avatar">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small><small class="text-muted float-right mt-1">
+                                        4:03
+                                        PM
+                                    </small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt...
+                                </div>
+                            </div>
+                        </a><a class="dropdown-item text-center border-top" href="#"><strong>View all messages</strong></a>
+                    </div>
+                </li>
+                <li class="tempUi-header-nav-item dropdown">
+                    <a class="tempUi-header-nav-link" data-toggle="dropdown" href="#"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="tempUi-avatar">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right pt-0">
+                        <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-id-card-alt"></i> Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-skiing"></i> Logout
+                        </a>
+                    </div>
+                </li>
+                <li class="tempUi-header-nav-item px-3">
+                    <button class="tempUi-class-toggler tempUi-header-nav-btn" type="button" data-target="#aside"
+                            data-class="tempUi-sidebar-show">
+                        <i class="fas fa-stream"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="tempUi-subheader justify-content-between px-3">
+
+                <ol class="breadcrumb border-0 m-0 px-0 px-md-3">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+
+                </ol>
+                <div class="tempUi-header-nav d-md-down-none mfe-2">
+                    <a class="tempUi-header-nav-link" href="#">
+                        <i class="far fa-comment-dots"></i>
+                    </a><a class="tempUi-header-nav-link" href="#">
+                        <i class="fas fa-chart-line"></i> &nbsp;Dashboard
+                    </a><a class="tempUi-header-nav-link" href="#">
+                        <i class="fas fa-cog"></i> &nbsp;Settings
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="tempUi-body">
+            <main class="tempUi-main">
+                <div class="container-fluid">
+                    <div id="ui-view">
+                        @RenderBody()
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="tempUi-footer center-all">
+            <div class="">Powered by&nbsp;<a href="#">temp UI</a></div>
+        </footer>
+    </div>
+    <script src="~/js/pace.min.js"></script>
+    <script src="~/js/tempUi.bundle.min.js"></script>
+    <script src="~/assets/fontAwesome/js/all.js"></script>
+    <script src="~/js/darkMode.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

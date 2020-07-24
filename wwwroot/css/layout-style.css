@@ -1,0 +1,130 @@
+﻿body {
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #3c4b64;
+    background-color: #ebedef;
+}
+
+.pace .pace-progress {
+    background: #212d43; /*color of loader*/
+}
+
+@media (min-width: 768px) {
+    .tempUi-app:not(.tempUi-dark-theme) .tempUi-sidebar.tempUi-sidebar-fixed {
+        border: 0;
+        box-shadow: 0 2px 2px 0 rgba(60, 75, 100, 0.14), 0 3px 1px -2px rgba(60, 75, 100, 0.12), 0 1px 5px 0 rgba(60, 75, 100, 0.2);
+    }
+}
+
+.tempUi-sidebar {
+    color: #fff;
+    background: #3c4b64; /*color of side bar left*/
+}
+
+    .tempUi-sidebar .tempUi-sidebar-nav-link:hover, .tempUi-sidebar .tempUi-sidebar-nav-dropdown-toggle:hover {
+        color: #fff;
+        background: #212d43; /*color of side bar on hover items  links */
+    }
+
+.tempUi-header {
+    background: #fff; /*color of nav bar top */
+    border-bottom: 1px solid #d8dbe0;
+}
+
+.tempUi-sidebar.tempUi-sidebar-light {
+    color: #4f5d73;
+    background: #fff; /*color of side bar right */
+    border-right: 1px solid rgba(159, 167, 179, 0.5);
+}
+
+.list-group-accent .list-group-item-accent-secondary {
+    border-left: 4px solid #ced2d8; /*color of side bar right  items have this on left of titles*/
+}
+
+.text-muted {
+    color: #768192 !important; /*color of side bar right  items have color  titles*/
+}
+
+.bg-light {
+    background-color: #ebedef !important; /*color of side bar right  items have background titles*/
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #455164;
+    background-color: #ebedef; /*color of items notifications*/
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #212d43; /*color of items notifications whene u click it*/
+}
+
+.tempUi-footer {
+    color: #4f5d73;
+    background: #ebedef; /*color of footer*/
+    border-top: 1px solid #d8dbe0;
+}
+
+@media (max-width: 767.98px) {
+    .tempUi-sidebar-backdrop {
+        background-color: #000015; /*color whene response sidebar back ground color*/
+    }
+}
+button:focus {
+    outline: none;
+}
+/*================== dark mode ================*/
+
+body.tempUi-dark-theme {
+    color: #e1e1e1;
+    background-color: #292A2D;
+}
+.tempUi-dark-theme .tempUi-sidebar {
+    color: #e1e1e1;
+    background: #35363A;
+    /*background: #2c2c34;*/
+    border: 0;
+}
+.tempUi-sidebar.tempUi-sidebar-light {
+    color: #4f5d73;
+    background: #fff;
+    border-right: 1px solid rgba(159, 167, 179, 0.5);
+}
+.tempUi-dark-theme .tempUi-header {
+    background: #35363A;
+    /*background: #2c2c34;*/
+    border-bottom: 0;
+}
+.tempUi-dark-theme .tempUi-footer {
+    color: #e1e1e1;
+    background: #1e1e29;
+    border-top: 1px solid #181924;
+}
+.tempUi-dark-theme .tempUi-sidebar .tempUi-sidebar-nav-link:hover, .tempUi-dark-theme .tempUi-sidebar .tempUi-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #4638c2;
+}
+.tempUi-dark-theme .bg-light {
+    background-color: #151924 !important;
+}
+.tempUi-dark-theme .tempUi-sidebar.tempUi-sidebar-light {
+    background-color: #151924 !important;
+}
+.tempUi-dark-theme .nav-underline.nav-underline-primary .nav-link.active, .nav-underline.nav-underline-primary .show > .nav-link {
+    color: #d0d1d3;
+    border-color: #d0d1d3 !important;
+}
+.tempUi-dark-theme a{
+    color: #ececec;
+}
+.tempUi-dark-theme a:hover{
+    color: #768192;
+}
+.tempUi-dark-theme .tempUi-sidebar .tempUi-sidebar-nav-link:hover, .tempUi-dark-theme .tempUi-sidebar .tempUi-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #22232E;
+}
+/*================== end of dark mode ================*/

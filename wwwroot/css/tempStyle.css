@@ -1,0 +1,8 @@
+﻿.space-Icon{
+    margin: 0 22px 0 6px;
+}
+.center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
